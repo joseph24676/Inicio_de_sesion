@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro y Login Dinámico</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="background-web">
+    <div id="background" class="container login-background"> 
+        <div class="form-container">
+            <h2 id="form-title">Inicio de Sesión</h2>
+            <form id="main-form">
+                
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <div class="input-with-icon">
+                        <i class="fa-solid fa-envelope icon-inside"></i>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                
+               
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <div class="input-with-icon">
+                        <i class="fa-solid fa-lock icon-inside"></i>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                </div>
+                
+                
+                <div class="form-group" id="nombres-group" style="display: none;">
+                    <label para="nombres">Nombres completos:</label>
+                    <div class="input-with-icon">
+                        <i class="fa-solid fa-user icon-inside"></i>
+                        <input type="text" id="nombres" name="nombres">
+                    </div>
+                </div>
+
+                
+                <div class="form-group" id="apellidos-group" style="display: none;">
+                    <label para="apellidos">Apellidos completos:</label>
+                    <div class="input-with-icon">
+                        <i class="fa-solid fa-user-tie icon-inside"></i>
+                        <input type="text" id="apellidos" name="apellidos">
+                    </div>
+                </div>
+
+                
+                <div class="form-group" id="cedula-group" style="display: none;">
+                    <label para="cedula">Número de cédula:</label>
+                    <div class="input-with-icon">
+                        <i class="fa-solid fa-id-card icon-inside"></i>
+                        <input type="text" id="cedula" name="cedula">
+                    </div>
+                </div>
+
+                
+                <div class="form-group" id="telefono-group" style="display: none;">
+                    <label para="telefono">Número de teléfono:</label>
+                    <div class="input-with-icon">
+                        <i la fa-solid fa-phone icon-inside></i>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                </div>
+
+                <button type="submit" id="submit-button">Iniciar Sesión</button>
+            </form>
+            <p>
+                ¿No tienes una cuenta? 
+                <span id="toggle-form" class="toggle-link">Regístrate aquí</span>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
